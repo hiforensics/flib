@@ -20,6 +20,10 @@ const (
 	SHA256 = "sha256"
 )
 
+const (
+	Sep = "  " // Interoperability
+)
+
 var Supported = [...]string{CRC32, MD5, SHA1, SHA256}
 
 func Sum(name, algo string) (b []byte, err error) {

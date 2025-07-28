@@ -1,3 +1,3 @@
-module github.com/hiforensics/flib
+module github.com/hiforensics/utils
 
 go 1.24

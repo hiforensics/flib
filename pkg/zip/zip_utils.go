@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"slices"
 
-	"github.com/hiforensics/flib/pkg/sys"
+	"github.com/hiforensics/utils/pkg/sys"
 )
 
 func Index(name string) (files []string, err error) {

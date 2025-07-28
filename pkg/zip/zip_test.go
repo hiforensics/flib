@@ -7,12 +7,12 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/hiforensics/flib/pkg/test"
+	"github.com/hiforensics/utils/pkg/test"
 )
 
 func TestIndex(t *testing.T) {
 	t.Run("Test index", func(t *testing.T) {
-		idx, err := Index(test.Testdata("root.zip"))
+		idx, err := Index(test.Testdata("test.zip"))
 
 		if err != nil {
 			t.Fatal(err)
@@ -28,7 +28,7 @@ func TestUnzip(t *testing.T) {
 	t.Run("Test unzip", func(t *testing.T) {
 		tmp, _ := os.MkdirTemp(os.TempDir(), "zip")
 
-		err := Unzip(test.Testdata("root.zip"), tmp)
+		err := Unzip(test.Testdata("test.zip"), tmp)
 
 		if err != nil {
 			t.Fatal(err)

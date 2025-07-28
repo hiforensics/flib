@@ -2,7 +2,4 @@
 package fact
 
 // Interoperability
-const (
-	Product = "fact"
-	HashSep = "  "
-)
+const HashSep = "  "
